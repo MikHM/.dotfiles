@@ -4,3 +4,5 @@
 [color]
 	ui = true
 
+[core]
+	excludesfile = /Users/mik/.gitignore_global
