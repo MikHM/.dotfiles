@@ -23,3 +23,11 @@ Set bash a default shell `$ sudo chsh -s /usr/local/bin/bash`
 `$ brew tap homebrew/cask-fonts`  
 `$ brew cask install font-hack-nerd-font`  
 For MACOS, change font for text in iTerm's preferences.
+
+### Install RVM
+
+`$ brew install gpg2`  
+`$ command curl -sSL https://rvm.io/mpapis.asc | gpg --import -`  
+`$ command curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -`  
+`$ \curl -sSL https://get.rvm.io | bash -s stable`  
+`$ source ~/.rvm/scripts/rvm`  
