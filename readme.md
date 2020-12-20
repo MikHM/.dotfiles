@@ -15,3 +15,11 @@ Set bash a default shell `$ sudo chsh -s /usr/local/bin/bash`
 `$ config checkout`  
 `$ config config --local status.showUntrackedFiles no` 
 
+### Bash completion
+`$ brew install bash-completion`  
+
+### Nerd fonts
+
+`$ brew tap homebrew/cask-fonts`  
+`$ brew cask install font-hack-nerd-font`  
+For MACOS, change font for text in iTerm's preferences.

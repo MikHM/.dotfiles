@@ -6,6 +6,9 @@ git_branch() {
 # Customize terminal prompt
 export PS1="\[\033[01;34m\][\w]\[\033[00m\]\[\033[00;32m\]\$(git_branch)\[\033[00m\]\\n> "
 
+# auto-completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
 # ----------------------------------------------------------------------- #
 # ALIASES
 # ----------------------------------------------------------------------- #
