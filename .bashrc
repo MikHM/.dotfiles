@@ -23,6 +23,11 @@ export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
 export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
 
+export LDFLAGS="-L/usr/local/opt/v8@3.15/lib"
+export CPPFLAGS="-I/usr/local/opt/v8@3.15/include"
+export PATH="/usr/local/opt/v8@3.15/bin:$PATH"
+
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
