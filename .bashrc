@@ -13,7 +13,7 @@ export PS1="\[\033[01;34m\][\w]\[\033[00m\]\[\033[00;32m\]\$(git_branch)\[\033[0
 # ALIASES
 # ----------------------------------------------------------------------- #
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-source .aliases
+source ~/.aliases
 
 # ----------------------------------------------------------------------- #
 # EXPORTS
@@ -41,5 +41,18 @@ export PATH="/usr/local/opt/v8@3.15/bin:$PATH"
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 export PATH="/opt/.rbenv/bin:$PATH"
+
+# ----------------------------------------------------------------------- #
+# Env Variables
+# ----------------------------------------------------------------------- #
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+  export MYSQL_PASSWORD='password'
+  export MYSQL_SOCKET="/var/run/mysqld/mysqld.sock"
+else
+  # MYSQL for OSX
+  export MYSQL_PASSWORD=''
+  export HAPPYDEMICS2_MYSQL_SOCKET="/tmp/mysql.sock"
+  export MYSQL_SOCKET="/tmp/mysql.sock"
+fi
 
 eval "$(rbenv init -)"
