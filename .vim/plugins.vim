@@ -13,5 +13,9 @@ call plug#begin('~/.vim/autoload/plugged')
   " Theme
   Plug 'morhetz/gruvbox'
   Plug 'vim-airline/vim-airline'
+
+  " Search
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
 call plug#end()
 

@@ -11,7 +11,7 @@ alias h="cd ~/Sites/happydemics2"
 alias hd="cd ~/Sites/happydemics_dashboard"
 alias cv="vim ~/.vimrc"
 alias m="cd ~/Sites/maintainers"
-alias ma="cd ~/Sites/maavita_nodejs"
+alias ma="cd ~/Sites/maavita"
 alias fp="cd ~/Sites/frontend_playground"
 alias rp="cd ~/Sites/ruby_playground"
 

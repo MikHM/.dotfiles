@@ -37,7 +37,7 @@ set autoread                    		        " Reload files changed outside vim
 set autowriteall  					                " Automatically write the file when switching buffers
 set ruler                                   " show where you are
 set encoding=UTF-8
-set guifont=Hack_Nerd_Font_Mono:h11
+set guifont=Hack_Nerd_Font_Mono:h12
 set wildmenu					                      " Display all matches when tab complete.
 
 " ================ Turn Off Swap Files ==============
@@ -96,3 +96,15 @@ autocmd FileType eruby setlocal expandtab shiftwidth=2 tabstop=2
 
 " ================== Airline ===================
 let g:airline_powerline_fonts = 1
+
+" ====================== FZF ===================
+map <leader>p :Files<CR>
+map <leader>f :GFiles<CR>
+map <leader>b :Buffers<CR>
+nnoremap <leader>g :Rg!<CR>
+nnoremap <leader>t :Tags<CR>
+nnoremap <leader>m :Marks<CR>
+
+let $FZF_DEFAULT_OPTS = '--layout=reverse --inline-info'
+let $FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git/**'"
+

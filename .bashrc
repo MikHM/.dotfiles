@@ -32,7 +32,7 @@ export PATH="/usr/local/opt/openssl@1.0/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/openssl@1.0/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl@1.0/include"
 export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.0/lib/pkgconfig"
-#export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.0)"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
 export LDFLAGS="-L/usr/local/opt/v8@3.15/lib"
 export CPPFLAGS="-I/usr/local/opt/v8@3.15/include"
