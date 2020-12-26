@@ -9,6 +9,8 @@ export PS1="\[\033[01;34m\][\w]\[\033[00m\]\[\033[00;32m\]\$(git_branch)\[\033[0
 # auto-completion
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
+source ~/git-completion.bash
+
 # ----------------------------------------------------------------------- #
 # ALIASES
 # ----------------------------------------------------------------------- #
