@@ -13,6 +13,8 @@ call plug#begin('~/.vim/autoload/plugged')
   " Theme
   Plug 'morhetz/gruvbox'
   Plug 'vim-airline/vim-airline'
+  Plug 'luochen1990/rainbow'
+  Plug 'Yggdroot/indentLine'
 
   " Search
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -32,5 +34,8 @@ call plug#begin('~/.vim/autoload/plugged')
 
   " Helpful tools
   Plug 'tpope/vim-commentary'
+  Plug 'jiangmiao/auto-pairs'
+  Plug 'alvan/vim-closetag'
+  Plug 'tpope/vim-surround'
 call plug#end()
 
