@@ -17,5 +17,20 @@ call plug#begin('~/.vim/autoload/plugged')
   " Search
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
+
+  " Git
+  Plug 'tpope/vim-fugitive'
+  Plug 'airblade/vim-gitgutter'
+
+  " Ruby
+  Plug 'tpope/vim-endwise'
+  Plug 'vim-ruby/vim-ruby'
+  Plug 'tpope/vim-rails'
+
+  " Searching
+  Plug 'preservim/nerdtree'
+
+  " Helpful tools
+  Plug 'tpope/vim-commentary'
 call plug#end()
 
