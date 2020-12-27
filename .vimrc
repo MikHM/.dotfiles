@@ -108,7 +108,7 @@ let g:airline_powerline_fonts = 1
 map <leader>p :Files<CR>
 map <leader>f :GFiles<CR>
 map <leader>b :Buffers<CR>
-nnoremap <leader>g :Rg!<CR>
+nnoremap <leader>g :Rg<CR>
 nnoremap <leader>t :Tags<CR>
 nnoremap <leader>m :Marks<CR>
 

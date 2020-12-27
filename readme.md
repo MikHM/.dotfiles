@@ -26,7 +26,7 @@ For MACOS, change font for text in iTerm's preferences.
 
 ### Needed for search in Vim
 `$ brew install ripgrep`  
-`$ brew install fzf`  
+`$ brew install fzf`, and run `$(brew --prefix)/opt/fzf/install` to setup key bindings and more.
 
 ### Git completion for bash
 `$ curl -O https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash`  
