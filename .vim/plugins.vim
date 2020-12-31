@@ -13,7 +13,7 @@ call plug#begin('~/.vim/autoload/plugged')
   " Theme
   Plug 'morhetz/gruvbox'
   Plug 'vim-airline/vim-airline'
-  Plug 'luochen1990/rainbow'
+  Plug 'kien/rainbow_parentheses.vim'
   Plug 'Yggdroot/indentLine'
 
   " Search

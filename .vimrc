@@ -99,7 +99,7 @@ autocmd FileType eruby setlocal expandtab shiftwidth=2 tabstop=2
 " => Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ================== Rainbow ===================
-let g:rainbow_active = 1
+"let g:rainbow_active = 1
 
 " ================== Airline ===================
 let g:airline_powerline_fonts = 1
@@ -178,3 +178,8 @@ let g:closetag_shortcut = '>'
 "
 let g:closetag_close_shortcut = '<leader>>'
 
+" ============ Rainbow_parentheses ================
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
