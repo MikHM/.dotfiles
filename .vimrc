@@ -95,6 +95,11 @@ set guioptions-=R						                  " Same for the right side, split.
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType eruby setlocal expandtab shiftwidth=2 tabstop=2
 
+" ================== Autocompletion ========================
+" set colorcolumn=80
+set complete+=kspell
+set shortmess+=c
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins

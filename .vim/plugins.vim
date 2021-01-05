@@ -19,6 +19,7 @@ call plug#begin('~/.vim/autoload/plugged')
   " Search
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
+  Plug 'vim-scripts/AutoComplPop'
 
   " Git
   Plug 'tpope/vim-fugitive'
