@@ -40,6 +40,7 @@ set encoding=UTF-8
 set guifont=Hack_Nerd_Font_Mono:h12
 set wildmenu					                      " Display all matches when tab complete.
 set updatetime=100
+set cursorline                              " Enable highlighting of the current line
 
 " ================= Show whitespaces ================
 highlight ExtraWhitespace ctermbg=red guibg=red

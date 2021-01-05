@@ -29,6 +29,9 @@ call plug#begin('~/.vim/autoload/plugged')
   Plug 'vim-ruby/vim-ruby'
   Plug 'tpope/vim-rails'
 
+  " CoffeeScript
+  Plug 'kchmck/vim-coffee-script'
+
   " Searching
   Plug 'preservim/nerdtree'
 
