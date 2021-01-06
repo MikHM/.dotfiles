@@ -74,6 +74,10 @@ filetype indent on
 set list listchars=tab:\ \ ,trail:·		      " Display tabs and trailing spaces visually
 set linebreak    				                    " Wrap lines at convenient points
 
+" indent/unindent with tab/shift-tab
+nmap <Tab> >>
+nmap <S-tab> <<
+
 " ================ Split management ======================
 " Where to put new splits
 set splitright
@@ -116,7 +120,7 @@ map <leader>p :Files<CR>
 map <leader>f :GFiles<CR>
 map <leader>b :Buffers<CR>
 nnoremap <leader>g :Rg<CR>
-nnoremap <leader>t :Tags<CR>
+nnoremap <leader>T :Tags<CR>
 nnoremap <leader>m :Marks<CR>
 
 let $FZF_DEFAULT_OPTS = '--layout=reverse --inline-info'
@@ -192,4 +196,4 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
 " ================== Tagbar =======================
-map <leader>ù :TagbarToggle<CR>
+map <leader>t :TagbarToggle<CR>
