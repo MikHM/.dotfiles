@@ -41,6 +41,7 @@ set guifont=Hack_Nerd_Font_Mono:h12
 set wildmenu					                      " Display all matches when tab complete.
 set updatetime=100
 set cursorline                              " Enable highlighting of the current line
+" set colorcolumn=80
 
 " ================= Show whitespaces ================
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -96,8 +97,8 @@ autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType eruby setlocal expandtab shiftwidth=2 tabstop=2
 
 " ================== Autocompletion ========================
-" set colorcolumn=80
 set complete+=kspell
+set completeopt=menuone,longest
 set shortmess+=c
 
 
@@ -189,3 +190,6 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" ================== Tagbar =======================
+map <leader>ù :TagbarToggle<CR>

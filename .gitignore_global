@@ -1,7 +1,7 @@
 .dotfiles
 nodem_modules
 
-# Jetbrains editors 
+# Jetbrains editors
 .idea/
 
 # npm
@@ -17,6 +17,7 @@ Session.vim
 *~
 *.swp
 .lvimrc
+tags
 
 # VS Code
 .vscode/
