@@ -30,3 +30,8 @@ For MACOS, change font for text in iTerm's preferences.
 
 ### Git completion for bash
 `$ curl -O https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash`  
+
+### ZSH
+##### Syntax highlighting
+`$ brew install zsh-syntax-highlighting`  
+`$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`

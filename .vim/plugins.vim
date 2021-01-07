@@ -34,6 +34,9 @@ call plug#begin('~/.vim/autoload/plugged')
   " CoffeeScript
   Plug 'kchmck/vim-coffee-script'
 
+  " Syntax highlighting/styling/helper
+  Plug 'dense-analysis/ale'
+
   " Searching
   Plug 'preservim/nerdtree'
 
