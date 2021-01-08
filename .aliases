@@ -1,6 +1,8 @@
 # System
 alias vb="vim ~/.bashrc"
+alias vz="vim ~/.zshrc"
 alias sb="source ~/.bashrc"
+alias sz="source ~/.zshrc"
 alias l="ls -la"
 alias cport="sudo lsof -nP -iTCP:1025 -sTCP:LISTEN"
 

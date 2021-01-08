@@ -1,4 +1,4 @@
-" Install vim-plug if not found
+      " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -12,6 +12,9 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 call plug#begin('~/.vim/autoload/plugged')
   " Theme
   Plug 'morhetz/gruvbox'
+  Plug 'lifepillar/vim-gruvbox8'
+  Plug 'tomasiser/vim-code-dark'
+  Plug 'bluz71/vim-nightfly-guicolors'
   Plug 'vim-airline/vim-airline'
   Plug 'kien/rainbow_parentheses.vim'
   Plug 'Yggdroot/indentLine'

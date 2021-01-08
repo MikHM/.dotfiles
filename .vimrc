@@ -1,10 +1,13 @@
-                                    " vim Plug
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vim Plug
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 source $HOME/.vim/plugins.vim
 
-colorscheme gruvbox
-let g:gruvbox_termcolors=16
+set termguicolors
 set background=dark
+colorscheme nightfly "codedark gruvbox gruvbox8
+" let g:gruvbox_termcolors=16
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Remap Keys
@@ -41,6 +44,7 @@ set guifont=Hack_Nerd_Font_Mono:h12
 set wildmenu					                      " Display all matches when tab complete.
 set updatetime=100
 set cursorline                              " Enable highlighting of the current line
+" set linespace=15                          " GUI specific line-height
 " set colorcolumn=80
 
 " ================= Show whitespaces ================
@@ -107,13 +111,22 @@ set shortmess+=c
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Auto-Commands
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Automatically source the Vimrc on save
+augroup autosourcing
+  autocmd!
+  autocmd BufWritePost .vimrc source %
+augroup END
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" ================== Rainbow ===================
-"let g:rainbow_active = 1
-
 " ================== Airline ===================
 let g:airline_powerline_fonts = 1
+let g:airline_theme = 'nightfly' " codedark
+
 
 " ====================== FZF ===================
 map <leader>p :Files<CR>
@@ -150,43 +163,35 @@ let g:NERDTreeGitStatusShowIgnored = 1
 " ===================== Closetags =====================
 " filenames like *.xml, *.html, *.xhtml, ...
 " These are the file extensions where this plugin is enabled.
-"
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js,*.erb'
 
 " filenames like *.xml, *.xhtml, ...
 " This will make the list of non-closing tags self-closing in the specified files.
-"
 let g:closetag_xhtml_filenames = '*.xhtml,*.jsx,*.js,*.erb'
 
 " filetypes like xml, html, xhtml, ...
 " These are the file types where this plugin is enabled.
-"
 let g:closetag_filetypes = 'html,xhtml,phtml,js,erb'
 
 " filetypes like xml, xhtml, ...
 " This will make the list of non-closing tags self-closing in the specified files.
-"
 let g:closetag_xhtml_filetypes = 'xhtml,jsx,js,erb'
 
 " integer value [0|1]
 " This will make the list of non-closing tags case-sensitive (e.g. `<Link>` will be closed while `<link>` won't.)
-"
 let g:closetag_emptyTags_caseSensitive = 1
 
 " dict
-" Disables auto-close if not in a "valid" region (based on filetype)
-"
+" Disables auto-close if not in a 'valid' region (based on filetype)
 let g:closetag_regions = {
     \ 'typescript.tsx': 'jsxRegion,tsxRegion',
     \ 'javascript.jsx': 'jsxRegion',
     \ }
 
 " Shortcut for closing tags, default is '>'
-"
 let g:closetag_shortcut = '>'
 
 " Add > at current position without closing the current tag, default is ''
-"
 let g:closetag_close_shortcut = '<leader>>'
 
 " ============ Rainbow_parentheses ================
