@@ -63,7 +63,13 @@ else
   export MYSQL_SOCKET="/tmp/mysql.sock"
 fi
 
+autoload -Uz compinit
+compinit
+# Completion for kitty
+kitty + complete setup zsh | source /dev/stdin
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+eval "$(rbenv init -)"

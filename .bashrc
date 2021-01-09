@@ -57,6 +57,8 @@ else
   export MYSQL_SOCKET="/tmp/mysql.sock"
 fi
 
+source <(kitty + complete setup bash)
+
 eval "$(rbenv init -)"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
