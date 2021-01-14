@@ -32,6 +32,10 @@ alias nuke="bedc; bem; bes"
 alias be='bundle exec'
 alias bi='bundle install'
 
+# Django
+alias pms="python3 manage.py runserver"
+alias pmm="python3 manage.py runserver"
+
 # Git
 alias ga="git add "
 alias gaa="git add ."

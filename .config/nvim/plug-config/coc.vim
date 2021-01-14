@@ -3,7 +3,7 @@ let g:coc_global_extensions = [
   \ 'coc-explorer',
   \ 'coc-json',
   \ 'coc-marketplace',
-  \ 'coc-python',
+  \ 'coc-pyright',
   \ 'coc-css',
   \ 'coc-tailwindcss',
   \ 'coc-solargraph',
