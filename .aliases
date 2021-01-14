@@ -1,6 +1,6 @@
 # System
-alias vb="vim ~/.bashrc"
-alias vz="vim ~/.zshrc"
+alias vbash="vim ~/.bashrc"
+alias vzsh="vim ~/.zshrc"
 alias nvb="nvim ~/.bashrc"
 alias nvz="nvim ~/.zshrc"
 alias sb="source ~/.bashrc"

@@ -13,7 +13,7 @@ ZSH_THEME="avit"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bundler dotenv osx rake ruby rbenv zsh-syntax-highlighting)
+plugins=(git bundler dotenv osx rake ruby rbenv zsh-syntax-highlighting zsh-autosuggestions)
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   export ZSH="/home/mik/.oh-my-zsh"
@@ -26,6 +26,7 @@ else
   source $ZSH/oh-my-zsh.sh
 
   alias config='/usr/bin/git --git-dir=/Users/mik/.dotfiles/ --work-tree=/Users/mik'
+  source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
 
 # bringing in the rest of the inaliases
@@ -67,8 +68,6 @@ autoload -Uz compinit
 compinit
 # Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
-
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

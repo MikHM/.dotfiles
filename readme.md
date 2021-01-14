@@ -35,3 +35,19 @@ For MACOS, change font for text in iTerm's preferences.
 ##### Syntax highlighting
 `$ brew install zsh-syntax-highlighting`  
 `$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+
+## Linux
+
+### Switch shell to zsh
+`$ sudo apt install zsh`  
+`$ chsh -s $(which zsh)`
+
+### Neovim
+`$ sudo apt-get install neovim`  
+
+### Zsh plugins
+`$ sudo apt install zsh-syntax-highlighting`  
+- Download zsh-autosuggestions by  
+`$ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions`  
+- Download zsh-syntax-highlighting by  
+`$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting`  
