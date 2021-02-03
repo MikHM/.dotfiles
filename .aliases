@@ -15,9 +15,10 @@ alias s="cd ~/Sites"
 alias b="cd ~/Sites/bergamotte"
 alias h="cd ~/Sites/happydemics2"
 alias hd="cd ~/Sites/happydemics_dashboard"
-alias m="cd ~/Sites/maintainers"
 alias ma="cd ~/Sites/maavita"
-alias fp="cd ~/Sites/frontend_playground"
+alias mn="cd ~/Sites/maavita_nodejs"
+alias l="cd ~/Sites/laterity"
+alias ln="cd ~/Sites/laterity_nextjs"
 alias rp="cd ~/Sites/ruby_playground"
 
 # Rails
