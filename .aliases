@@ -17,7 +17,7 @@ alias h="cd ~/Sites/happydemics2"
 alias hd="cd ~/Sites/happydemics_dashboard"
 alias ma="cd ~/Sites/maavita"
 alias mn="cd ~/Sites/maavita_nodejs"
-alias l="cd ~/Sites/laterity"
+alias la="cd ~/Sites/laterity"
 alias ln="cd ~/Sites/laterity_nextjs"
 alias rp="cd ~/Sites/ruby_playground"
 
