@@ -64,6 +64,9 @@ else
   export MYSQL_SOCKET="/tmp/mysql.sock"
 fi
 
+export S3_ACCESS_KEY='skdfjsq'
+export S3_SECRET='dskkfjqskdmlf'
+
 autoload -Uz compinit
 compinit
 # Completion for kitty

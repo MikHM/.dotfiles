@@ -1,5 +1,4 @@
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Pluggins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 source $HOME/.config/nvim/plugins.vim
@@ -8,12 +7,12 @@ source $HOME/.config/nvim/plugins.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Remap Keys
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-inoremap jk <Esc>                           		              " Remap ESC to jk
 let mapleader = ','			                                      " Setting leader key to comma
 nmap <leader>sv :source ~/.config/nvim/init.vim<CR>
 nmap ,ev :tabedit ~/.config/nvim/init.vim<CR>		              " Open vimrc file in new buffer for quick edit
 nmap ,ep :tabedit ~/.config/nvim/plugins.vim<CR>	            " Open vimrc file in new buffer for quick edit
 nmap ,b :Buffers<CR>
+
 
 " ================= Split Opening Commands ====================
 nnoremap <leader>h :split<space>
@@ -91,24 +90,12 @@ nmap <Tab> >>
 nmap <S-tab> <<
 
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins Config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" ================== CoC =======================
-source $HOME/.config/nvim/plug-config/coc.vim
-nmap <silent> <space>e :CocCommand explorer<CR>
-
-" ================== Tagbar =======================
-map <leader>t :TagbarToggle<CR>
-
-" ============ Rainbow_parentheses ================
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
-
-" ====================== FZF ===================
+" ============================== FZF ==========================
 map <leader>p :Files<CR>
 map <leader>f :GFiles<CR>
 map <leader>b :Buffers<CR>
@@ -132,37 +119,3 @@ command! -bang -nargs=* Rg
   \   <bang>0 ? fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'up:60%')
   \           : fzf#vim#with_preview({'options': '--delimiter : --nth 4.. -e'}, 'right:50%', '?'),
   \   <bang>0)
-
-" ===================== Closetags =====================
-" filenames like *.xml, *.html, *.xhtml, ...
-" These are the file extensions where this plugin is enabled.
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js,*.erb'
-
-" filenames like *.xml, *.xhtml, ...
-" This will make the list of non-closing tags self-closing in the specified files.
-let g:closetag_xhtml_filenames = '*.xhtml,*.jsx,*.js,*.erb'
-
-" filetypes like xml, html, xhtml, ...
-" These are the file types where this plugin is enabled.
-let g:closetag_filetypes = 'html,xhtml,phtml,js,erb'
-
-" filetypes like xml, xhtml, ...
-" This will make the list of non-closing tags self-closing in the specified files.
-let g:closetag_xhtml_filetypes = 'xhtml,jsx,js,erb'
-
-" integer value [0|1]
-" This will make the list of non-closing tags case-sensitive (e.g. `<Link>` will be closed while `<link>` won't.)
-let g:closetag_emptyTags_caseSensitive = 1
-
-" dict
-" Disables auto-close if not in a 'valid' region (based on filetype)
-let g:closetag_regions = {
-    \ 'typescript.tsx': 'jsxRegion,tsxRegion',
-    \ 'javascript.jsx': 'jsxRegion',
-    \ }
-
-" Shortcut for closing tags, default is '>'
-let g:closetag_shortcut = '>'
-
-" Add > at current position without closing the current tag, default is ''
-let g:closetag_close_shortcut = '<leader>>'
